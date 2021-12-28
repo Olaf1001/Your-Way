@@ -89,7 +89,7 @@ a {
         width: 60px;
         position: absolute;
         bottom: 80px;
-        right: 6%;
+        right: 10%;
     }
 
     .mobile-menu-icon {
@@ -148,6 +148,8 @@ a {
         hr {
             display: initial;
             height: 50px;
+            border: 0.5px solid white;
+            border-radius: 1px;
         }
         
         .zzt__logo {

@@ -107,7 +107,7 @@ a {
   width: 60px;
   position: absolute;
   bottom: 80px;
-  right: 6%;
+  right: 10%;
 }
 
 .page-nav .mobile-menu-icon {
@@ -159,6 +159,8 @@ a {
   .page-nav hr {
     display: initial;
     height: 50px;
+    border: 0.5px solid white;
+    border-radius: 1px;
   }
   .page-nav .zzt__logo {
     position: initial;
