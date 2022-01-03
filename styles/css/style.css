@@ -5,8 +5,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
   color: #34495E;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -283,6 +284,7 @@ h2 {
 
 .aboutus-section {
   width: 100%;
+  height: 1300px;
   margin-top: 30px;
 }
 
@@ -317,7 +319,63 @@ h2 {
 
 .aboutus-content p {
   text-align: justify;
-  line-height: 20px;
+  line-height: 25px;
+}
+
+.aboutus-graphic {
+  position: relative;
+  left: calc(50% - 150px);
+  margin: 60px auto 0 auto;
+}
+
+.aboutus-desktop-website-image {
+  display: none;
+}
+
+.aboutus-mobile-website-image {
+  width: 400px;
+  position: absolute;
+  left: -110px;
+  top: -25px;
+}
+
+.aboutus-post-image {
+  width: 300px;
+  position: absolute;
+  top: 200px;
+  left: 110px;
+}
+
+.aboutus-dots-image {
+  display: none;
+}
+
+.aboutus-social-media img {
+  width: 55px;
+}
+
+.aboutus-facebook-icon, .aboutus-instagram-icon, .aboutus-spotify-icon, .aboutus-tiktok-icon, .aboutus-youtube-icon {
+  position: absolute;
+  -webkit-transform: rotate(38deg);
+          transform: rotate(38deg);
+}
+
+.aboutus-instagram-icon {
+  left: 245px;
+  top: 180px;
+}
+
+.aboutus-facebook-icon {
+  left: 240px;
+}
+
+.aboutus-spotify-icon {
+  top: 330px;
+  left: 110px;
+}
+
+.aboutus-tiktok-icon {
+  display: none;
 }
 
 .triangles {
@@ -350,20 +408,6 @@ h2 {
   position: absolute;
   right: 150px;
   top: -40px;
-}
-
-.aboutus-social-media {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.aboutus-social-media img {
-  width: 55px;
 }
 
 .team-section {
