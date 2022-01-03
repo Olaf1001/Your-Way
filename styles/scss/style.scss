@@ -363,8 +363,148 @@ h2 {
     left: 110px;
 }
 
-.aboutus-tiktok-icon {
-    display: none;
+
+@media (min-width: 650px) {
+    .aboutus-desktop-website-image {
+        display: initial;
+        width: 800px;
+        position: absolute;
+        top: -50px;
+        left: -600px;
+    }
+
+    .aboutus-mobile-website-image {
+        width: 500px;
+        left: -90px;
+        top: 255px;
+    }
+
+    .aboutus-post-image {
+        width: 500px;
+        top: -85px;
+        left: -15px;
+    }
+
+    .aboutus-facebook-icon {
+        left: 335px;
+        top: 295px;
+    }
+
+    .aboutus-instagram-icon {
+        left: 325px;
+        top: 480px;
+    }
+
+    .aboutus-spotify-icon {
+        top: 650px;
+        left: 180px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aboutus-content {
+        width: 50%;
+    }
+    .aboutus-graphic {
+        left: 0px;
+        width: 50%;
+    }
+
+    .aboutus-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .aboutus-dots-image {
+        display: initial;
+        position: absolute;
+        top: 500px;
+        right: -305px;
+    }
+        .first-triangle {
+            width: 175px !important;
+            right: -105px !important;
+        }
+    
+        .second-triangle {
+            width: 60px !important;
+            right: 75px !important;
+        }
+    
+        .third-triangle {
+            width: 90px !important;
+            right: 170px !important;
+        }
+    }
+
+@media (min-width: 1440px) {
+    .aboutus-graphic {
+        left: 100px;
+    }
+
+    .aboutus-title {
+        .aboutus-title-text {
+            font-size: 25px;
+        }
+
+        img {
+            width: 35px;
+            height: 40px;
+        }
+    }
+
+    .aboutus-content {
+        h2 {
+            font-size: 38px;
+        }
+        p {
+            width: 700px;
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+
+    .aboutus-desktop-website-image {
+        width: 1000px;
+    }
+
+    .aboutus-mobile-website-image {
+        width: 600px;
+        left: 50px;
+        top: 320px;
+    }
+
+    .aboutus-post-image {
+        width: 500px;
+        top: -55px;
+        left: 110px;
+    }
+
+    .aboutus-instagram-icon {
+        left: 555px;
+        top: 575px;
+    }
+    
+    .aboutus-facebook-icon {
+        left: 500px;
+        top: 345px;
+    }
+    
+    .aboutus-spotify-icon {
+        top: 795px;
+        left: 380px;
+    }
+
+    .aboutus-youtube-icon {
+        top: 10px;
+        left: 100px;
+    }
+
+    .aboutus-social-media {
+        img {
+            width: 70px;
+        }
+    }
 }
 
 .triangles {
@@ -392,7 +532,7 @@ h2 {
         width: 70px;
         position: absolute;
         right: 150px;
-        top: -40px;
+        top: 0px;
     }
 }
 
