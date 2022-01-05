@@ -288,7 +288,7 @@ h2 {
     margin-top: 30px;
 }
 
-.aboutus-title {
+.section-title {
     display: flex;
     align-items: center;
     color: $blue;
@@ -448,8 +448,8 @@ h2 {
         left: 100px;
     }
 
-    .aboutus-title {
-        .aboutus-title-text {
+    .section-title {
+        .section-title-text {
             font-size: 25px;
         }
 
@@ -541,46 +541,103 @@ h2 {
 
 .team-section {
     padding: 30px 0;
-    background: {
-        image: url('../../assets/img/white_bg_mobile.png');
-        position: center;
-        size: cover;
+
+    h2 {
+        margin-top: 5px;
     }
 
 }
 .team-board {
     display: grid;
     grid-template-columns: auto ;
-    // grid-template-rows:;
+    grid-template-rows: auto;
+    height: 1900px;
     align-items: center;
+    justify-content: center;
 
     .teammate {
+        justify-self: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        box-shadow: 0px 0px 19px -6px rgba(66, 68, 90, 1);
+
         p {
             font-weight: bold;
-            margin: 0;
+            margin-top: -20px;
+            margin-bottom: 0;
             font-size: 20px;
-            margin-bottom: 5px;
+            color: $blue;
         }
 
         span {
-            color: $blue;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 600;
             margin-bottom: 10px;
         }
 
-        img {
-            width: 150px;
+        hr {
+            width: 60px;
+            border: 1px solid $blue;
+            border-radius: 5px;
         }
 
-        .fifth-person {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            margin: 0 auto;
+        img {
+            width: 100%;
+            height: 300px;
+            clip-path: polygon(0 0, 100% 0, 100% 67%, 0 86%);
         }
+
+        .teammate-social-media {
+            i {
+                color: $blue;
+                font-size: 25px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) {
+    .teammate {
+        width: 400px;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .teammate {
+        width: 300px !important;
+    }
+    .team-board {
+        display: grid;
+        grid-template-columns: 355px 355px;
+        height: 1350px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .teammate {
+        width: 350px!important;
+
+        p {
+            font-size: 35px;
+        }
+        span {
+            font-size: 22px;
+        }
+    }
+    .team-board {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        height: 890px;
+        align-items: center;
+        justify-content: center;
     }
 }
 

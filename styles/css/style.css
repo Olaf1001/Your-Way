@@ -294,7 +294,7 @@ h2 {
   margin-top: 30px;
 }
 
-.aboutus-title {
+.section-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,7 +308,7 @@ h2 {
   z-index: 1;
 }
 
-.aboutus-title img {
+.section-title img {
   width: 25px;
   height: 30px;
 }
@@ -453,10 +453,10 @@ h2 {
   .aboutus-graphic {
     left: 100px;
   }
-  .aboutus-title .aboutus-title-text {
+  .section-title .section-title-text {
     font-size: 25px;
   }
-  .aboutus-title img {
+  .section-title img {
     width: 35px;
     height: 40px;
   }
@@ -533,9 +533,10 @@ h2 {
 
 .team-section {
   padding: 30px 0;
-  background-image: url("../../assets/img/white_bg_mobile.png");
-  background-position: center;
-  background-size: cover;
+}
+
+.team-section h2 {
+  margin-top: 5px;
 }
 
 .team-board {
@@ -543,12 +544,19 @@ h2 {
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  height: 1900px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team-board .teammate {
+  justify-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,31 +567,94 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 19px -6px #42445a;
+          box-shadow: 0px 0px 19px -6px #42445a;
 }
 
 .team-board .teammate p {
   font-weight: bold;
-  margin: 0;
+  margin-top: -20px;
+  margin-bottom: 0;
   font-size: 20px;
-  margin-bottom: 5px;
+  color: #0E77FF;
 }
 
 .team-board .teammate span {
-  color: #0E77FF;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.team-board .teammate img {
-  width: 150px;
+.team-board .teammate hr {
+  width: 60px;
+  border: 1px solid #0E77FF;
+  border-radius: 5px;
 }
 
-.team-board .teammate .fifth-person {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 2;
-  margin: 0 auto;
+.team-board .teammate img {
+  width: 100%;
+  height: 300px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 67%, 0 86%);
+          clip-path: polygon(0 0, 100% 0, 100% 67%, 0 86%);
+}
+
+.team-board .teammate .teammate-social-media i {
+  color: #0E77FF;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+@media (min-width: 540px) {
+  .teammate {
+    width: 400px;
+  }
+}
+
+@media (min-width: 800px) {
+  .teammate {
+    width: 300px !important;
+  }
+  .team-board {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 355px 355px;
+        grid-template-columns: 355px 355px;
+    height: 1350px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .teammate {
+    width: 350px !important;
+  }
+  .teammate p {
+    font-size: 35px;
+  }
+  .teammate span {
+    font-size: 22px;
+  }
+  .team-board {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 400px 400px 400px;
+        grid-template-columns: 400px 400px 400px;
+    height: 890px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-form {
