@@ -544,15 +544,14 @@ h2 {
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  height: 1900px;
+  grid-auto-rows: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  grid-gap: 30px;
 }
 
 .team-board .teammate {
@@ -567,7 +566,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 250px;
+  width: 300px;
   height: 400px;
   background-color: white;
   -webkit-box-shadow: 0px 0px 19px -6px #42445a;
@@ -591,6 +590,7 @@ h2 {
 .team-board .teammate hr {
   width: 60px;
   border: 1px solid #0E77FF;
+  background-color: #0E77FF;
   border-radius: 5px;
 }
 
@@ -620,40 +620,53 @@ h2 {
   .team-board {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 355px 355px;
-        grid-template-columns: 355px 355px;
-    height: 1350px;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    grid-gap: 50px;
+        grid-template-areas: "first second" "third fourth" "fifth fifth";
+  }
+  .fourth-person {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: fourth;
+  }
+  .fifth-person {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: fifth;
   }
 }
 
 @media (min-width: 1024px) {
   .teammate {
     width: 350px !important;
+    height: 425px !important;
   }
   .teammate p {
-    font-size: 35px;
+    font-size: 28px !important;
   }
   .teammate span {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .team-board {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 400px 400px 400px;
-        grid-template-columns: 400px 400px 400px;
-    height: 890px;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+        grid-template-areas: "first second third" "fourth fourth fifth";
   }
 }
 
