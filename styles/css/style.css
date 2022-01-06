@@ -189,8 +189,9 @@ h2 {
   .page-nav hr {
     display: initial;
     height: 50px;
-    border: 0.5px solid white;
-    border-radius: 1px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
   }
   .page-nav .zzt__logo {
     position: initial;
