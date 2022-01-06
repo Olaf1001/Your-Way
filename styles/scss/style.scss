@@ -11,10 +11,13 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: $black;
-    max-width: 100%;
-    overflow-x: hidden;
+    position: relative;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+    
 a {
     text-decoration: none;
     color: white;
@@ -41,8 +44,8 @@ h2 {
     border: none;
     background-color: transparent;
     font-size: 18px;
-    padding: 15px;
-    border-radius: 2px;
+    padding: 20px;
+    border-radius: 24px 4px;
     cursor: pointer;
 }
 
@@ -64,6 +67,7 @@ h2 {
     }
     height: 100vh;
     z-index: -1;
+    position: relative;
 }
 
 .rocket-overlay{
@@ -443,7 +447,7 @@ h2 {
         }
     }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
     .aboutus-graphic {
         left: 100px;
     }
@@ -632,6 +636,18 @@ h2 {
                              "fifth fifth";
     }
 
+    .first-person {
+        grid-area: first;
+    }
+
+    .second-person {
+        grid-area: second;
+    }
+
+    .third-person {
+        grid-area: third;
+    }
+
     .fourth-person {
         grid-area: fourth;
     }
@@ -669,11 +685,14 @@ h2 {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
+    .teammate {
+        width: unset!important;
+    }
     .team-board {
         grid-template-columns: auto auto auto auto auto;
         grid-template-areas: "first second third fourth fifth";
-        grid-gap: 70px;
+        grid-gap: auto;
     }
 }
 
@@ -897,7 +916,7 @@ h2 {
     }
 
     .footer-graphic-form-container {
-        margin-bottom: -570px;
+        margin-bottom: -580px;
     }
 
     .footer-contact {

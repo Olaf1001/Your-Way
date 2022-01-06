@@ -6,7 +6,10 @@ body {
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: #34495E;
-  max-width: 100%;
+  position: relative;
+}
+
+html, body {
   overflow-x: hidden;
 }
 
@@ -36,8 +39,8 @@ h2 {
   border: none;
   background-color: transparent;
   font-size: 18px;
-  padding: 15px;
-  border-radius: 2px;
+  padding: 20px;
+  border-radius: 24px 4px;
   cursor: pointer;
 }
 
@@ -57,6 +60,7 @@ h2 {
   background-size: cover;
   height: 100vh;
   z-index: -1;
+  position: relative;
 }
 
 .rocket-overlay {
@@ -449,7 +453,7 @@ h2 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
   .aboutus-graphic {
     left: 100px;
   }
@@ -636,6 +640,21 @@ h2 {
     grid-gap: 50px;
         grid-template-areas: "first second" "third fourth" "fifth fifth";
   }
+  .first-person {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: first;
+  }
+  .second-person {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: second;
+  }
+  .third-person {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: third;
+  }
   .fourth-person {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -681,12 +700,15 @@ h2 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
+  .teammate {
+    width: unset !important;
+  }
   .team-board {
     -ms-grid-columns: auto auto auto auto auto;
         grid-template-columns: auto auto auto auto auto;
         grid-template-areas: "first second third fourth fifth";
-    grid-gap: 70px;
+    grid-gap: auto;
   }
 }
 
@@ -914,7 +936,7 @@ h2 {
     width: 700px;
   }
   .footer-graphic-form-container {
-    margin-bottom: -570px;
+    margin-bottom: -580px;
   }
   .footer-contact {
     bottom: -670px;

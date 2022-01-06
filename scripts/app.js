@@ -1,6 +1,3 @@
-let scrollEventHandler = function()
-{
-  window.scroll(0, window.pageYOffset)
-}
-
-window.addEventListener("scroll", scrollEventHandler, false);
+window.onscroll = function () {
+  window.scrollTo(0,window.scrollY);
+};
