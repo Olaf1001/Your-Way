@@ -54,10 +54,11 @@ h2 {
 }
 
 .header-section {
-  background-image: url("../../assets/img/header-section-mobile-background.png");
+  background-image: url("../../assets/img/header-section-mobile-background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
 }
@@ -71,6 +72,18 @@ h2 {
 .rocket-overlay img {
   width: 100vw;
   height: 300px;
+}
+
+@media screen and (max-height: 600px) {
+  .rocket-overlay img {
+    height: 250px !important;
+  }
+}
+
+@media screen and (min-height: 768px) and (max-height: 850px) and (min-width: 1000px) {
+  .rocket-overlay img {
+    height: 500px !important;
+  }
 }
 
 .page-nav {
@@ -128,8 +141,8 @@ h2 {
 .zzt__logo {
   width: 60px;
   position: absolute;
-  bottom: 70px;
-  right: 10%;
+  bottom: 60px;
+  right: 12%;
 }
 
 .mobile-menu-icon {
@@ -183,7 +196,8 @@ h2 {
     height: unset;
   }
   .page-nav .nav-logo {
-    width: 280px;
+    width: 300px;
+    margin-right: 10px;
   }
   .page-nav hr {
     display: initial;
@@ -194,7 +208,8 @@ h2 {
   }
   .page-nav .zzt__logo {
     position: initial;
-    width: 60px;
+    width: 80px;
+    height: 60px;
   }
 }
 
@@ -209,7 +224,7 @@ h2 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 410px;
+    width: 400px;
   }
   .social-media-icons {
     display: -webkit-box;
@@ -247,7 +262,7 @@ h2 {
     line-height: 30px;
   }
   .header-section {
-    background-image: url("../../assets/img/background.png");
+    background-image: url("../../assets/img/background.webp");
     background-position: unset;
   }
 }
@@ -329,7 +344,8 @@ h2 {
 
 .aboutus-content p {
   text-align: justify;
-  line-height: 25px;
+  line-height: 28px;
+  font-size: 18px;
 }
 
 .aboutus-graphic {
@@ -385,6 +401,9 @@ h2 {
 }
 
 @media (min-width: 650px) {
+  .aboutus-content p {
+    font-size: 16px;
+  }
   .aboutus-desktop-website-image {
     display: initial;
     width: 800px;
@@ -465,7 +484,7 @@ h2 {
     height: 40px;
   }
   .aboutus-content p {
-    width: 700px;
+    width: 90%;
     font-size: 20px;
     line-height: 35px;
   }
@@ -712,15 +731,21 @@ h2 {
   }
 }
 
+footer {
+  overflow: hidden;
+}
+
 .footer-form {
   background-color: white;
   width: 70%;
+  height: 350px;
   padding: 30px;
   margin: 20px auto -200px auto;
   z-index: 1;
   position: relative;
-  -webkit-box-shadow: 0px -1px 45px -1px rgba(138, 139, 148, 0.43);
-          box-shadow: 0px -1px 45px -1px rgba(138, 139, 148, 0.43);
+  top: 50px;
+  -webkit-box-shadow: 0px 0px 50px -15px #42445a;
+          box-shadow: 0px 0px 50px -15px #42445a;
 }
 
 .footer-form h3 {
@@ -748,15 +773,19 @@ h2 {
   font-size: 13px;
 }
 
+.footer-form .acceptance-box input {
+  margin: 0 5px 0 0;
+}
+
 .footer-form button {
   display: block;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .footer-text {
   width: 100vw;
   height: 500px;
-  background-image: url("../../assets/img/footer-background.png");
+  background-image: url("../../assets/img/footer-background.webp");
   background-position: center;
   background-size: cover;
   z-index: 0;
