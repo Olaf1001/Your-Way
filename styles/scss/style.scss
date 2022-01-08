@@ -47,6 +47,11 @@ h2 {
     padding: 20px;
     border-radius: 24px 4px;
     cursor: pointer;
+    transition: .3s all;
+}
+
+.btn:hover {
+    border-radius: 4px 24px;
 }
 
 .btn--white {
@@ -217,6 +222,26 @@ h2 {
         width: 400px;
     }
 
+    .desktop-menu a {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                margin: -5px 0;
+                background-color: white;
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all .3s ease-in-out 0s;
+            }
+            &:hover:before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+    }
+
     .social-media-icons {
         display: flex;
         flex-direction: column;
@@ -229,7 +254,16 @@ h2 {
         right: 15px;
         top: 30%;
         z-index: 2;
+
     }
+        .social-media-icons, .footer-social-media {
+            a {
+                transition: all .3s ease-in-out;
+            }
+            a:hover {
+                transform: scale(1.2);
+            }
+        }
 
     .social-media-icons i {
         font-size: 20px;
@@ -704,7 +738,7 @@ h2 {
         align-items: center;
         justify-content: center;
         grid-template-areas: "first second third"
-                             "fourth fourth fifth";
+                             "fourth . fifth";
     }
 }
 
@@ -713,10 +747,27 @@ h2 {
         width: unset!important;
     }
     .team-board {
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: 300px 300px 300px 300px 300px;
         grid-template-areas: "first second third fourth fifth";
-        grid-gap: auto;
+        grid-gap: 30px;
     }
+}
+
+.guest-board-container {
+    display: flex;
+}
+
+.board-line {
+    hr {
+        height: 700px;
+        background-color: transparent;
+        border: none;
+        border-left: 2.5px dashed black;
+    }
+}
+
+.partner a {
+    color: black;
 }
 
 footer {

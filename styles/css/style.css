@@ -42,6 +42,12 @@ h2 {
   padding: 20px;
   border-radius: 24px 4px;
   cursor: pointer;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.btn:hover {
+  border-radius: 4px 24px;
 }
 
 .btn--white {
@@ -226,6 +232,28 @@ h2 {
             justify-content: space-between;
     width: 400px;
   }
+  .desktop-menu a {
+    position: relative;
+  }
+  .desktop-menu a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    margin: -5px 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+  }
+  .desktop-menu a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
   .social-media-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -247,6 +275,14 @@ h2 {
     right: 15px;
     top: 30%;
     z-index: 2;
+  }
+  .social-media-icons a, .footer-social-media a {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .social-media-icons a:hover, .footer-social-media a:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .social-media-icons i {
     font-size: 20px;
@@ -715,7 +751,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-        grid-template-areas: "first second third" "fourth fourth fifth";
+        grid-template-areas: "first second third" "fourth . fifth";
   }
 }
 
@@ -724,11 +760,28 @@ h2 {
     width: unset !important;
   }
   .team-board {
-    -ms-grid-columns: auto auto auto auto auto;
-        grid-template-columns: auto auto auto auto auto;
+    -ms-grid-columns: 300px 300px 300px 300px 300px;
+        grid-template-columns: 300px 300px 300px 300px 300px;
         grid-template-areas: "first second third fourth fifth";
-    grid-gap: auto;
+    grid-gap: 30px;
   }
+}
+
+.guest-board-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.board-line hr {
+  height: 700px;
+  background-color: transparent;
+  border: none;
+  border-left: 2.5px dashed black;
+}
+
+.partner a {
+  color: black;
 }
 
 footer {
