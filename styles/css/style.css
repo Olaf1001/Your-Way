@@ -727,6 +727,10 @@ h2 {
   margin-top: 5px;
 }
 
+.teammate-img {
+  display: none !important;
+}
+
 @media (min-width: 540px) {
   .teammate {
     width: 400px;
@@ -799,6 +803,14 @@ h2 {
   .teammate i {
     font-size: 30px !important;
   }
+  .teammate-img {
+    display: initial !important;
+  }
+  .teammate-img img {
+    height: unset !important;
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+  }
   .team-board {
     display: -ms-grid;
     display: grid;
@@ -815,6 +827,9 @@ h2 {
 }
 
 @media (min-width: 1600px) {
+  .teammate-img {
+    display: none !important;
+  }
   .teammate {
     width: unset !important;
   }
@@ -1116,8 +1131,17 @@ h2 {
   color: gray;
 }
 
-.partner a {
-  color: black;
+.partner img {
+  width: 200px;
+}
+
+@media (min-width: 1024px) {
+  .partner-board {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px;
+  }
 }
 
 footer {

@@ -718,6 +718,10 @@ h2 {
     }
 }
 
+.teammate-img {
+    display: none!important;
+}
+
 @media (min-width: 540px) {
     .teammate {
         width: 400px;
@@ -785,6 +789,14 @@ h2 {
             font-size: 30px!important;
         }
     }
+
+    .teammate-img{
+        display: initial!important;
+        img {
+            height: unset!important;
+            clip-path: none!important;
+        }
+    }
     .team-board {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -796,6 +808,9 @@ h2 {
 }
 
 @media (min-width: 1600px) {
+    .teammate-img {
+        display: none!important;
+    }
     .teammate {
         width: unset!important;
     }
@@ -1122,8 +1137,17 @@ $guest--purple:#8E44AD;
     }
 }
 
-.partner a {
-    color: black;
+.partner {
+    img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .partner-board {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+    }
 }
 
 footer {
