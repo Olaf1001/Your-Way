@@ -29,6 +29,10 @@ h2 {
     font-size: 30px;
 }
 
+.scroll-disable {
+    overflow: hidden;
+}
+
 @media (min-width: 1440px) {
     h2 {
         font-size: 38px;
@@ -83,21 +87,21 @@ h2 {
 
 .rocket-overlay img{
     width: 100vw;
-    height: 300px;
+    height: 33vh;
 }
 
-@media screen and ( max-height: 600px ) {
-    .rocket-overlay img{
+// @media screen and ( max-height: 600px ) {
+//     .rocket-overlay img{
         
-        height: 250px!important;
-    }
-}
+//         height: 250px!important;
+//     }
+// }
 
-@media screen and ( min-height: 768px ) and ( max-height: 850px ) and (min-width: 1000px){
-    .rocket-overlay img{
-        height: 500px!important;
-    }
-}
+// @media screen and ( min-height: 768px ) and ( max-height: 850px ) and (min-width: 1000px){
+//     .rocket-overlay img{
+//         height: 500px!important;
+//     }
+// }
 
 .page-nav {
     display: flex;
@@ -133,8 +137,12 @@ h2 {
     .zzt__logo {
         width: 60px;
         position: absolute;
-        bottom: 60px;
-        right: 12%;
+        bottom: 7%;
+        right: 10%;
+    }
+    
+    .mobile-menu {
+        transition: .3s all;
     }
 
     .mobile-menu-icon {
@@ -177,6 +185,51 @@ h2 {
 
 .social-media-icons {
     display: none;
+}
+
+.mobile-nav {
+    padding-top: calc(50vh - 200px);
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    position: fixed;
+    z-index: 2;
+    transform: translateX(-100vw);
+    transition: .3s all;
+}
+
+.mobile-nav-active {
+    transform: translateX(0);
+    transition: .3s all;
+}
+
+.mobile-menu-icon-active {
+    transform: rotate(90deg);
+}
+
+.mobile-links {
+    a {
+        color: $black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.mobile-social-media-icons {
+    padding-top: 25vh;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    i {
+        color: black;
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 400px) {
@@ -256,7 +309,7 @@ h2 {
         z-index: 2;
 
     }
-        .social-media-icons, .footer-social-media {
+        .social-media-icons, .footer-social-media, .teammate-social-media, .aboutus-social-media {
             a {
                 transition: all .3s ease-in-out;
             }
@@ -588,7 +641,7 @@ h2 {
         width: 45px;
         position: absolute;
         right: 60px;
-        top: -15px;
+        top: -20px;
     }
 
     .third-triangle {
@@ -870,6 +923,8 @@ $guest--purple:#8E44AD;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
+    z-index: 1;
+    position: relative;
 }
 
 .guest-photo-box {

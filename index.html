@@ -25,13 +25,12 @@
                     <div class="mobile-menu">
                         <i class="fas fa-bars mobile-menu-icon"></i> 
                     </div>
-
                     <div class="desktop-menu">
-                        <a href="#">O nas</a>
-                        <a href="#">Zespół</a>
-                        <a href="#">Goście</a>
-                        <a href="#">Partnerzy</a>
-                        <a href="#">Newsletter</a>
+                        <a href="#aboutus_section">O nas</a>
+                        <a href="#team_section">Zespół</a>
+                        <a href="#guest_board">Goście</a>
+                        <a href="#partner_section">Partnerzy</a>
+                        <a href="#page_footer">Newsletter</a>
                     </div>
                     <div class="social-media-icons">
                         <a href="https://bit.ly/yourway-facebook"><i class="fab fa-facebook"></i></a>
@@ -41,6 +40,25 @@
                         <a href=""><i class="fab fa-spotify"></i></a>
                 </div>
                 </nav>
+            </div>
+            <div class="mobile-nav">
+                <div class="container">
+                    <div class="mobile-links">
+                        <a href="#aboutus_section">O nas</a>
+                        <a href="#team_section">Zespół</a>
+                        <a href="#guest_board">Goście</a>
+                        <a href="#partner_section">Partnerzy</a>
+                        <a href="#page_footer">Newsletter</a>
+                    </div>
+
+                    <div class="mobile-social-media-icons">
+                        <a href="https://bit.ly/yourway-facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://bit.ly/yourway-insta"><i class="fab fa-instagram"></i></a>
+                        <a href="https://bit.ly/yourway-yt"><i class="fab fa-youtube"></i></a>
+                        <a href="https://bit.ly/yourway-tt"><i class="fab fa-tiktok"></i></a>
+                        <a href=""><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
             </div>
 
             <div class="header-section--heading" data-aos="fade-up">
@@ -67,7 +85,7 @@
             </div>
         </section>
 
-        <section class="aboutus-section">
+        <section class="aboutus-section" id="aboutus_section">
             <div class="triangles">
                 <img src="assets/img/blue-triangle.webp" alt="" class="first-triangle">
                 <img src="assets/img/transparent-triangle.webp" alt="" class="second-triangle">
@@ -119,7 +137,7 @@
             </div>
         </section>
 
-        <section class="team-section">
+        <section class="team-section" id="team_section">
             <div class="container">
                 <div class="section-title">
                     <img src="assets/icons/triangle-left.webp" alt="">
@@ -160,7 +178,7 @@
                             <hr>
                             <span>Social Media specialist</span>
                             <div class="teammate-social-media">
-                                <a href="https://www.facebook.com/profile.php?id=100008841515992"><i class="fab fa-facebook" target="_blank"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100008841515992" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
                             </div>
                         </div>
                         <div class="teammate fifth-person">
@@ -169,14 +187,19 @@
                             <hr>
                             <span>Media Analyst</span>
                             <div class="teammate-social-media">
-                                <a href="https://www.facebook.com/profile.php?id=100009545109440"><i class="fab fa-facebook" target="_blank" rel="noopener"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100009545109440" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
                             </div>
                         </div>
                     </div>
             </div>
         </section>
 
-        <section class="guest-board">
+        <section class="guest-board" id="guest_board">
+            <div class="triangles">
+                <img src="assets/img/blue-triangle.webp" alt="" class="first-triangle">
+                <img src="assets/img/transparent-triangle.webp" alt="" class="second-triangle">
+                <img src="assets/img/transparent-triangle.webp" alt="" class="third-triangle">
+            </div>
             <div class="container">
                 <div class="section-title">
                     <img src="assets/icons/triangle-left.webp" alt="">
@@ -314,7 +337,7 @@
             </div>
         </section>
 
-        <section class="partner-section">
+        <section class="partner-section" id="partner_section">
             <div class="container">
                 <div class="section-title">
                     <img src="assets/icons/triangle-left.webp" alt="">
@@ -342,12 +365,12 @@
         </section>
         
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" id="page_footer">
         <div class="container footer-graphic-form-container">
             <div class="footer-graphic">
                 <img src="assets/img/footer-image.webp" alt="A woman working on call centre">
             </div>
-            <div class="footer-form">
+            <div class="footer-form" data-aos="fade-down">
                 <h3>
                     Zapisz się do Newslettera!
                 </h3>
@@ -389,9 +412,9 @@
             </div>
         </div>
     </footer>
-
-    <script src="scripts/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
     <script>
       AOS.init();
     </script>
