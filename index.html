@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/e065d96571.js" crossorigin="anonymous"></script>
     <title>YourWay</title>
 </head>
@@ -15,7 +16,7 @@
                 <nav class="page-nav">
                     <div class="nav-logo">
                         <div class="yourway__logo">
-                            <img src="assets/logo/yourway-logo.webp" alt="" class="yourway__icon">
+                            <img src="assets/logo/yourway-logo.svg" alt="" class="yourway__icon">
                             <p>YourWay</p>
                         </div>
                         <hr class="">
@@ -42,7 +43,7 @@
                 </nav>
             </div>
 
-            <div class="header-section--heading">
+            <div class="header-section--heading" data-aos="fade-up">
                 <div class="container">
                     <h1>
                         Podejmij pierwszy krok i zacznij spełniać marzenia!
@@ -75,7 +76,7 @@
             <div class="container">
                 <div class="aboutus-text">
                     <div class="aboutus-container">
-                        <div class="aboutus-content">
+                        <div class="aboutus-content" data-aos="fade-left">
                             <div class="section-title">
                                 <img src="assets/icons/triangle-left.webp" alt="">
                                 <p class="section-title-text">O nas</p>
@@ -195,7 +196,7 @@
                         <i class="fas fa-circle sixth-dot"></i> -->
                     </div>
                     <div class="board-content">
-                        <div class="guest guest--red">
+                        <div class="guest guest--red" data-aos="fade-right">
                             <div class="guest-photo-box">
                                 <img src="assets/img/cat-test-image.webp" alt="" class="guest-phot-img" style="display: none;">
                                 <span class="guest-image-temp">?</span>
@@ -322,19 +323,19 @@
                 <h2>Zaufali nam</h2>
                 <div class="team-board partner-board">
                     <div class="partner">
-                        <a href="#">mrsolutions<img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
                     </div>
                     <div class="partner">
-                        <a href="#">zse<img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
                     </div>
                     <div class="partner">
-                        <a href="#">cozadzien<img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
                     </div>
                     <div class="partner">
-                        <a href="#">firma4<img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
                     </div>
                     <div class="partner">
-                        <a href="#">firma5<img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -377,6 +378,7 @@
                         <p>YourWay</p>
                     </div>
                 </div>
+
                 <div class="footer-social-media">
                     <a href="https://bit.ly/yourway-facebook"><i class="fab fa-facebook"></i></a>
                     <a href="https://bit.ly/yourway-insta"><i class="fab fa-instagram"></i></a>
@@ -389,5 +391,9 @@
     </footer>
 
     <script src="scripts/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
