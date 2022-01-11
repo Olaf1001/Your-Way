@@ -1196,7 +1196,8 @@ footer {
 }
 
 .footer-text {
-  width: 100vw;
+  margin-left: -2px;
+  width: calc(100vw + 2px);
   height: 500px;
   background-image: url("../../assets/img/footer-background.webp");
   background-position: center;
