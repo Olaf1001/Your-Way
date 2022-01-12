@@ -687,7 +687,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   width: 300px;
-  height: 400px;
+  height: 450px;
   background-color: white;
   -webkit-box-shadow: 0px 0px 19px -6px #42445a;
           box-shadow: 0px 0px 19px -6px #42445a;
@@ -695,14 +695,14 @@ h2 {
 
 .team-board .teammate p {
   font-weight: bold;
-  margin-top: -20px;
+  margin-top: -110px;
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 25px;
   color: #0E77FF;
 }
 
 .team-board .teammate span {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -716,14 +716,14 @@ h2 {
 
 .team-board .teammate img {
   width: 100%;
-  height: 300px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 67%, 0 86%);
-          clip-path: polygon(0 0, 100% 0, 100% 67%, 0 86%);
+  height: 425px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 57%, 0 71%);
+          clip-path: polygon(0 0, 100% 0, 100% 57%, 0 71%);
 }
 
 .team-board .teammate .teammate-social-media i {
   color: #0E77FF;
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 5px;
 }
 
@@ -792,10 +792,11 @@ h2 {
   }
   .teammate {
     width: 325px !important;
-    height: 425px !important;
+    height: 475px !important;
   }
   .teammate p {
     font-size: 28px !important;
+    margin-top: -130px !important;
   }
   .teammate span {
     font-size: 22px !important;
@@ -803,11 +804,14 @@ h2 {
   .teammate i {
     font-size: 30px !important;
   }
+  .teammate img {
+    height: 460px !important;
+  }
   .teammate-img {
     display: initial !important;
   }
   .teammate-img img {
-    height: unset !important;
+    height: 100% !important;
     -webkit-clip-path: none !important;
             clip-path: none !important;
   }
@@ -832,6 +836,12 @@ h2 {
   }
   .teammate {
     width: unset !important;
+  }
+  .teammate p {
+    margin-top: -110px !important;
+  }
+  .teammate img {
+    height: 425px !important;
   }
   .team-board {
     -ms-grid-columns: 300px 300px 300px 300px 300px;
@@ -1198,7 +1208,7 @@ footer {
 .footer-text {
   margin-left: -2px;
   width: calc(100vw + 2px);
-  height: 500px;
+  height: 525px;
   background-image: url("../../assets/img/footer-background.webp");
   background-position: center;
   background-size: cover;
@@ -1282,9 +1292,17 @@ footer {
   display: none;
 }
 
+.zzt-info {
+  color: white;
+  font-size: 14px;
+}
+
 @media (min-width: 650px) {
   .footer-social-media {
     margin-top: -265px;
+  }
+  .zzt-info {
+    margin-top: 35px;
   }
 }
 
@@ -1339,16 +1357,9 @@ footer {
     width: 400px;
     margin: 0 auto -30px auto;
   }
-}
-
-.social-media-text {
-  display: initial;
-  position: absolute;
-  bottom: 100px;
-  right: 140px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
+  .zzt-info {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -677,20 +677,20 @@ h2 {
         flex-direction: column;
         align-items: center;
         width: 300px;
-        height: 400px;
+        height: 450px;
         background-color: white;
         box-shadow: 0px 0px 19px -6px rgba(66, 68, 90, 1);
 
         p {
             font-weight: bold;
-            margin-top: -20px;
+            margin-top: -110px;
             margin-bottom: 0;
-            font-size: 20px;
+            font-size: 25px;
             color: $blue;
         }
 
         span {
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 600;
             margin-bottom: 10px;
         }
@@ -704,14 +704,14 @@ h2 {
 
         img {
             width: 100%;
-            height: 300px;
-            clip-path: polygon(0 0, 100% 0, 100% 67%, 0 86%);
+            height: 425px;
+            clip-path: polygon(0 0, 100% 0, 100% 57%, 0 71%);
         }
 
         .teammate-social-media {
             i {
                 color: $blue;
-                font-size: 25px;
+                font-size: 30px;
                 margin-top: 5px;
             }
         }
@@ -777,10 +777,11 @@ h2 {
     }
     .teammate {
         width: 325px!important;
-        height: 425px!important;
+        height: 475px!important;
 
         p {
             font-size: 28px!important;
+            margin-top: -130px!important;
         }
         span {
             font-size: 22px!important;
@@ -788,12 +789,15 @@ h2 {
         i {
             font-size: 30px!important;
         }
+        img {
+            height: 460px!important;
+        }
     }
 
     .teammate-img{
         display: initial!important;
         img {
-            height: unset!important;
+            height: 100%!important;
             clip-path: none!important;
         }
     }
@@ -813,6 +817,12 @@ h2 {
     }
     .teammate {
         width: unset!important;
+        p {
+            margin-top: -110px!important;
+        }
+        img {
+            height: 425px!important;
+        }
     }
     .team-board {
         grid-template-columns: 300px 300px 300px 300px 300px;
@@ -1199,7 +1209,7 @@ footer {
 .footer-text {
     margin-left: -2px;
     width: calc(100vw + 2px);
-    height: 500px;
+    height: 525px;
     background: {
         image: url('../../assets/img/footer-background.webp');
         position: center;
@@ -1268,9 +1278,17 @@ footer {
     display: none;
 }
 
+.zzt-info {
+    color: white;
+    font-size: 14px;
+}
 @media (min-width: 650px) {
     .footer-social-media {
         margin-top: -265px;
+    }
+
+    .zzt-info {
+        margin-top: 35px;
     }
 }
 
@@ -1325,16 +1343,10 @@ footer {
         width: 400px;
         margin: 0 auto -30px auto;
     }
-}
 
-.social-media-text {
-    display: initial;
-    position: absolute;
-    bottom: 100px;
-    right: 140px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
+    .zzt-info {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 1200px) {
