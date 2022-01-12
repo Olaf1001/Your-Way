@@ -2,7 +2,7 @@ const hamburgerMenuIcon = document.querySelector('.mobile-menu');
 const htmlTag = document.querySelector('html');
 const bodyTag = document.querySelector('body');
 const mobileMenu = document.querySelector('.mobile-nav');
-const mobileLinks = document.querySelectorAll('.mobile-links a')
+const mobileLinks = document.querySelectorAll('.mobile-links a');
 
 document.addEventListener('DOMContentLoaded', () => {
     hamburgerMenuIcon.addEventListener('click' , () => {
