@@ -878,7 +878,7 @@ $guest--purple:#8E44AD;
 }
 
 .guest--red {
-    border: 3px solid $guest--red;
+    // border: 3px solid $guest--red;
 
     .guest-text {
         hr {
@@ -942,18 +942,18 @@ $guest--purple:#8E44AD;
 }
 
 .guest {
-    border-radius: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 0px 0px 0px;
     z-index: 1;
     position: relative;
+    border-radius: 15px;
 }
 
 .guest-photo-box {
-    width: 33%;
+    width: 40%;
     // background: {
     //     image: url('../../assets/img/cat-test-image.webp');
     //     position: center;
@@ -966,8 +966,9 @@ $guest--purple:#8E44AD;
     align-items: center;
     justify-content: center;
     img {
-        width: 80%;
-        border-radius: 50%;
+        width: 98%;
+        height: 90%;
+        margin-bottom: -1px;
     }
 }
 
@@ -976,10 +977,10 @@ $guest--purple:#8E44AD;
 }
 
 .guest-text {
-    width: 66%;
+    width: 60%;
 
     h3 {
-        margin: 8px 0;
+        margin: 8px 0 4px 0;
         font-size: 20px;
     }
 
@@ -988,7 +989,7 @@ $guest--purple:#8E44AD;
         margin: 8px 0;
         font-size: 16px;
         text-align: justify;
-        line-height: 20px;
+        line-height: 25px;
     }
     hr {
         width: 50px;
@@ -1053,8 +1054,9 @@ $guest--purple:#8E44AD;
     }
 
     .guest {
-        margin: 115px 0 0 0; 
+        margin: 55px 0 0 0; 
         width: unset;
+        box-shadow: 0px 0px 40px -25px rgba(66, 68, 90, 1);
     }
 
     .board-line {
@@ -1132,7 +1134,7 @@ $guest--purple:#8E44AD;
     .guest--red {
         width: 500px;
         position: absolute;
-        top: -320px;
+        top: -370px;
         right: 450px;
     }
 
@@ -1155,6 +1157,10 @@ $guest--purple:#8E44AD;
 
 @media (min-width: 1024px) {
     .partner-board {
+        grid-template-columns: 200px 200px 200px;
+        grid-template-areas: unset!important;
+    }
+    .medial-partner-board {
         display: grid;
         grid-template-columns: 200px 200px 200px 200px;
     }
