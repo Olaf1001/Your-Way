@@ -90,18 +90,11 @@ h2 {
     height: 33vh;
 }
 
-// @media screen and ( max-height: 600px ) {
-//     .rocket-overlay img{
-        
-//         height: 250px!important;
-//     }
-// }
-
-// @media screen and ( min-height: 768px ) and ( max-height: 850px ) and (min-width: 1000px){
-//     .rocket-overlay img{
-//         height: 500px!important;
-//     }
-// }
+@media screen and ( min-height: 600px ) and ( max-height: 850px ) and (min-width: 1000px){
+    .rocket-overlay img{
+        height: 500px!important;
+    }
+}
 
 .page-nav {
     display: flex;
