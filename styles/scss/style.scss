@@ -204,13 +204,13 @@ h2 {
     a {
         color: $black;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
+    height: 230px;
 }
 
 .mobile-social-media-icons {
@@ -1150,7 +1150,7 @@ $guest--purple:#8E44AD;
 
 @media (min-width: 1024px) {
     .partner-board {
-        grid-template-columns: 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px;
         grid-template-areas: unset!important;
     }
     .medial-partner-board {
@@ -1159,80 +1159,28 @@ $guest--purple:#8E44AD;
     }
 }
 
-footer {
-    overflow: hidden;
-}
-
-.footer-form {
-    background-color: white;
-    width: 70%;
-    height: 350px;
-    padding: 30px;
-    margin: 20px auto -200px auto;
-    z-index: 1;
-    position: relative;
-    top: 50px;
-    box-shadow: 0px 0px 50px -15px rgba(66, 68, 90, 1);
-
-    h3 {
-        padding: 20px 0 10px 0;
-        text-align: center;
-    }
-
-    .newsletter-input {
-        border: none;
-        border-bottom: 1px solid $black;
-        padding: 5px 0 5px 0;
-        display: block;
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .acceptance-box {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        font-size: 13px;
-    }
-
-    .acceptance-box input {
-        margin: 0 5px 0 0;
-    }
-
-    button {
-        display: block;
-        margin: 50px auto 0 auto;
-    }
-}
-
-.footer-text {
-    margin-left: -2px;
-    width: calc(100vw + 2px);
-    height: 525px;
+.page-footer {
     background: {
-        image: url('../../assets/img/footer-background.webp');
-        position: center;
+        image: url('../../assets/img/footer-bg.png');
         size: cover;
-    }
-    z-index: 0;
+    };
+    margin-top: 50px;
+    height: 360px;
+    color: $white;
 }
 
 .footer-contact {
-    position: relative;
-    bottom: -320px;
-    color: white;
-
+    padding-top: 5px;
     h4 {
-        margin-bottom: 6px;
-        font-size: 20px;
+        margin-bottom: 10px;
+        font-size: 25px;
     }
     hr {
         border: 2px solid $light-blue;
         background-color: $light-blue;
         border-radius: 10px;
         width: 70px;
-        text-align: left;
-        margin-right: 2900px;
+        margin: 0;
     }
 }
 
@@ -1240,221 +1188,50 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 220px;
-    margin-top: 5px;
+    width: 240px;
+    margin-top: 10px;
     a, i {
-        font-size: 18px;
+        font-size: 20px;
+    }
+}
+
+.footer-social-media {
+    h4 {
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+}
+
+.footer-social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    i {
+        font-size: 30px;
     }
 }
 
 .footer-logo {
-    margin-top: 330px;
-    margin-left: -15px;
-    width: 280px;
-}
-
-.footer-social-media {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 50px;
-    height: 210px;
-    text-align: center;
-    margin-top: -235px;
-    margin-left: auto;
-
-    i {
-        font-size: 25px;
+    .yourway__logo {
+        height: 70px;
+        margin-left: -15px;
+    }
+    height: 100px;
+    margin-top: 30px;
+    .logo-span {
+        margin: 0;
+        font-size: 15px;
     }
 }
 
-.footer-graphic {
-    display: none;
-}
-
-.social-media-text {
-    display: none;
-}
-
-.zzt-info {
-    color: white;
-    font-size: 14px;
-}
-@media (min-width: 650px) {
-    .footer-social-media {
-        margin-top: -265px;
-    }
-
-    .zzt-info {
-        margin-top: 35px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .footer-graphic {
-        display: initial;
-        margin-bottom: -70px;
-        img {
-            width: 400px;
-        }
-    }
-
-    .footer-graphic-form-container {
-        width: 95%;
-        margin-bottom: -410px;
+@media (min-width: 750px) {
+    .footer-content-container {
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
-    .footer-form {
-        width: 400px;
-        margin: 0;
-        margin-bottom: -30px;
-        margin-left: 50px;
-    }
-
-    .footer-contact {
-        bottom: -420px;
-    }
-
-    .footer-social-media {
-        position: relative;
-        flex-direction: row;
-        width: 270px;
-        height: 50px;
-        margin-top: -70px;
-
-        i {
-            font-size: 30px;
-        }
-    }
-    .footer-text {
-        background-position: unset;
-        height: 650px;
-    }
-
-    .footer-logo {
-        margin-top: 440px;
-    }
-
-    .footer-form {
-        width: 400px;
-        margin: 0 auto -30px auto;
-    }
-
-    .zzt-info {
-        margin-top: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .footer-graphic {
-        img {
-            width: 500px;
-        }
-        margin-bottom: -95px;
-    }
-
-    .footer-form {
-        margin-left: 75px;
-        height: 300px;
-        padding: 40px;
-
-        h3 {
-            font-size: 28px;
-        }
-    }
-
-    .footer-contact {
-        .contact-mail {
-            width: 245px;
-        }
-
-        h4 {
-            font-size: 30px;
-        }
-
-        hr {
-            width: 100px;
-        }
-
-        .contact-mail {
-            a,i {
-                font-size: 20px;
-            }
-        }
-    }
-
-    .footer-graphic-form-container {
-        width: 90%;
-    }
-
-    .footer-contact {
-        bottom: -450px;
-    }
-}
-
-@media (min-width: 1300px) {
-    .footer-text {
-        height: 1000px;
-    }
-
-    .footer-graphic {
-        img {
-            width: 700px;
-        }
-    }
-
-    .footer-graphic-form-container {
-        margin-bottom: -580px;
-    }
-
-    .footer-contact {
-        bottom: -670px;
-    }
-
-    .footer-logo {
-        margin-top: 730px;
-    }
-
-    .footer-social-media {
-        margin-top: -70px;
-    }
-
-    .footer-form {
-        margin: 0 auto -140px auto;
-        padding: 40px 70px 80px 70px;
-
-        h3 {
-            font-size: 30px;
-        }
-    }
-}
-
-@media (min-width: 2500px) {
-    .footer-text {
-        height: 1000px;
-    }
-    .footer-graphic-form-container {
-        margin-bottom: -800px;
-    }
-
-    .footer-form {
-        margin-bottom: -30px;
-    }
-
-    .footer-contact {
-        bottom: -860px;
-    }
-
-    .footer-logo {
-        position: absolute;
-        right: 0;
-        margin-top: 730px;
-    }
-
-    .footer-social-media {
-        margin-top: 505px;
+    .page-footer {
+        height: 270px;
     }
 }
