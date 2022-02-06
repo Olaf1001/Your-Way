@@ -867,6 +867,7 @@ h2 {
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   row-gap: 50px;
+  margin-bottom: 100px;
 }
 
 .guest {
