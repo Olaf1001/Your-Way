@@ -84,6 +84,12 @@ h2 {
   height: 33vh;
 }
 
+@media screen and (max-height: 950px) and (min-width: 1000px) {
+  .rocket-overlay img {
+    display: none;
+  }
+}
+
 .page-nav {
   display: -webkit-box;
   display: -ms-flexbox;
