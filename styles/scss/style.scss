@@ -855,6 +855,12 @@ $guest--purple:#8E44AD;
     }
 }
 
+.guest--purple {
+    .guest-description hr{
+        background-color: $guest--purple;
+    }
+}
+
 .guest-gallery {
     display: grid;
     grid-template-columns: auto;
@@ -930,6 +936,12 @@ $guest--purple:#8E44AD;
         }
     }
 
+    .photo-third-guest {
+        img {
+            width: 86%;
+        }
+    }
+
     .guest-description {
         width: 60%;
     }
@@ -978,14 +990,17 @@ $guest--purple:#8E44AD;
     .guest--yellow {
         grid-area: second-guest;
     }
-    .guest-announcement {
+    .guest--purple {
         grid-area: third-guest;
+    }
+    .guest-announcement {
+        grid-area: annoucment;
     }
     .guest-gallery {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         grid-template-areas: "first-guest second-guest"
-                             "third-guest third-guest";
+                             "third-guest annoucment";
         align-items: center;
         column-gap: 20px;
     }
