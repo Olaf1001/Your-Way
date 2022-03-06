@@ -886,6 +886,10 @@ h2 {
   background-color: #8E44AD;
 }
 
+.guest--orange .guest-description hr {
+  background-color: #F39C12;
+}
+
 .guest-gallery {
   display: -ms-grid;
   display: grid;
@@ -967,6 +971,9 @@ h2 {
   .photo-third-guest img {
     width: 86%;
   }
+  .photo-fourth-guest img {
+    width: 88%;
+  }
   .guest-description {
     width: 60%;
   }
@@ -1019,17 +1026,23 @@ h2 {
     -ms-grid-column: 1;
     grid-area: third-guest;
   }
-  .guest-announcement {
+  .guest--orange {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
+    grid-area: fourth-guest;
+  }
+  .guest-announcement {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: annoucment;
   }
   .guest-gallery {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-        grid-template-areas: "first-guest second-guest" "third-guest annoucment";
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "first-guest second-guest" "third-guest fourth-guest" "annoucment annoucment";
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

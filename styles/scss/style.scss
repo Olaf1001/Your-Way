@@ -861,6 +861,12 @@ $guest--purple:#8E44AD;
     }
 }
 
+.guest--orange {
+    .guest-description hr{
+        background-color: $guest--orange;
+    }
+}
+
 .guest-gallery {
     display: grid;
     grid-template-columns: auto;
@@ -942,6 +948,12 @@ $guest--purple:#8E44AD;
         }
     }
 
+    .photo-fourth-guest {
+        img {
+            width: 88%;
+        }
+    }
+
     .guest-description {
         width: 60%;
     }
@@ -993,14 +1005,18 @@ $guest--purple:#8E44AD;
     .guest--purple {
         grid-area: third-guest;
     }
+    .guest--orange {
+        grid-area: fourth-guest;
+    }
     .guest-announcement {
         grid-area: annoucment;
     }
     .guest-gallery {
         grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas: "first-guest second-guest"
-                             "third-guest annoucment";
+                             "third-guest fourth-guest"
+                              "annoucment annoucment";
         align-items: center;
         column-gap: 20px;
     }
