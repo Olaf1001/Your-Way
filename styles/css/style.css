@@ -84,7 +84,7 @@ h2 {
   height: 33vh;
 }
 
-@media screen and (max-height: 950px) and (min-width: 1000px) {
+@media screen and (max-height: 900px) and (min-width: 1000px) {
   .rocket-overlay img {
     display: none;
   }
@@ -750,20 +750,6 @@ h2 {
   .teammate {
     width: 300px !important;
   }
-  .team-board {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    grid-gap: 50px;
-        grid-template-areas: "first second" "third fourth" "fifth fifth";
-  }
   .first-person {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -789,6 +775,32 @@ h2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: fifth;
+  }
+  .team-board {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 50px;
+        grid-template-areas: "first second" "third fourth" "fifth fifth";
+  }
+  .partner-blok {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: blok;
+    text-align: center;
+  }
+  .partner-board {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "uth zse" "2lo where2go" "blok blok";
   }
 }
 
@@ -833,6 +845,11 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
         grid-template-areas: "first second third" "fourth . fifth";
+  }
+  .partner-board {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "uth zse 2lo" "where2go . blok";
   }
 }
 
@@ -888,6 +905,10 @@ h2 {
 
 .guest--orange .guest-description hr {
   background-color: #F39C12;
+}
+
+.guest--green .guest-description hr {
+  background-color: #2ECC71;
 }
 
 .guest-gallery {
@@ -974,6 +995,9 @@ h2 {
   .photo-fourth-guest img {
     width: 88%;
   }
+  .photo-fifth-guest img {
+    width: 110%;
+  }
   .guest-description {
     width: 60%;
   }
@@ -1006,6 +1030,37 @@ h2 {
   }
 }
 
+.project-summarize-text {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.project-summarize-film-box iframe {
+  width: 100%;
+  height: 225px;
+}
+
+@media (min-width: 768px) {
+  .project-summarize-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project-summarize-text-box {
+    width: 37.5%;
+  }
+  .project-summarize-film-box {
+    width: 57.5%;
+  }
+}
+
 .partner img {
   width: 200px;
 }
@@ -1031,10 +1086,14 @@ h2 {
     -ms-grid-column: 2;
     grid-area: fourth-guest;
   }
-  .guest-announcement {
+  .guest--green {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    grid-area: fifth-guest;
+  }
+  .guest-announcement {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: annoucment;
   }
   .guest-gallery {
@@ -1042,7 +1101,7 @@ h2 {
         grid-template-columns: auto auto;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
-        grid-template-areas: "first-guest second-guest" "third-guest fourth-guest" "annoucment annoucment";
+        grid-template-areas: "first-guest second-guest" "third-guest fourth-guest" "fifth-guest annoucment";
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1051,10 +1110,13 @@ h2 {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+  .partner-blok {
+    grid-area: unset;
+  }
   .partner-board {
-    -ms-grid-columns: 200px 200px 200px 200px;
-        grid-template-columns: 200px 200px 200px 200px;
+    -ms-grid-columns: 200px 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px 200px;
         grid-template-areas: unset !important;
   }
   .medial-partner-board {
