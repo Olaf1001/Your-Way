@@ -81,4 +81,38 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     window.addEventListener("scroll", handleScroll)
   })
+var a = 0;
+  $(window).scroll(function () {
+    var oTop = $("#project-summarize-stats").offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+        $(".counter").each(function () {
+            var $this = $(this),
+                countTo = $this.attr("data-number");
+            $({
+                countNum: $this.text()
+            }).animate(
+                {
+                    countNum: countTo
+                },
+                {
+                    duration: 3000,
+                    easing: "swing",
+                    step: function () {
+                        //$this.text(Math.ceil(this.countNum));
+                        $this.text(
+                            Math.ceil(this.countNum).toLocaleString("pl")
+                        );
+                    },
+                    complete: function () {
+                        $this.text(
+                            Math.ceil(this.countNum).toLocaleString("pl")
+                        );
+                    }
+                }
+            );
+        });
+        a = 1;
+    }
+});
+
     

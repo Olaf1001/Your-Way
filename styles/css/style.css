@@ -1057,7 +1057,6 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-gap: 50px;
 }
 
 .stat-element {
@@ -1074,11 +1073,12 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 190px;
 }
 
 .stat-element span {
   color: #0E77FF;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
 }
@@ -1105,6 +1105,9 @@ h2 {
   .project-summarize-film-box {
     width: 57.5%;
   }
+  .stat-element span {
+    font-size: 45px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1115,6 +1118,12 @@ h2 {
   .project-summarize-container {
     margin: 0 auto;
     width: 1200px;
+  }
+  .project-summarize-stats {
+    grid-gap: 30px;
+  }
+  .stat-element span {
+    font-size: 50px;
   }
 }
 

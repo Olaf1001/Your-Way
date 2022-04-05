@@ -1040,7 +1040,6 @@ $guest--purple:#8E44AD;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    grid-gap: 50px;
 }
 
 .stat-element {
@@ -1048,10 +1047,11 @@ $guest--purple:#8E44AD;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 190px;
 
     span {
         color: $blue;
-        font-size: 40px;
+        font-size: 34px;
         font-weight: bold;
         text-align: center;
     }
@@ -1067,13 +1067,16 @@ $guest--purple:#8E44AD;
         justify-content: space-between;
         align-items: center;
     }
-
     .project-summarize-text-box {
         width: 37.5%;
     }
-
     .project-summarize-film-box {
         width: 57.5%;
+    }
+    .stat-element {
+        span {
+            font-size: 45px;
+        }
     }
 }
 
@@ -1085,6 +1088,14 @@ $guest--purple:#8E44AD;
     .project-summarize-container {
         margin: 0 auto;
         width: 1200px;
+    }
+    .project-summarize-stats {
+        grid-gap: 30px;
+    }
+    .stat-element {
+        span {
+            font-size: 50px;
+        }
     }
 }
 
